@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+        name: firstpod
+        namespace:  mayank
+spec: 
+        containers: 
+        - image: mdhack/myserver
+          name: myfirstcont
+          imagePullPolicy: IfNotPresent
